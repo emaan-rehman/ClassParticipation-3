@@ -1,105 +1,340 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Missions</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AstroVerse | Missions</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="images/favicon.webp">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- STARS -->
 <div class="stars"></div>
+<div class="stars2"></div>
+<div class="stars3"></div>
 
-<!-- NAVBAR -->
+<!-- HEADER -->
+<header>
 
-<section class="py-5 text-center">
-<h1 class="glow">Space Missions</h1>
-</section>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary py-3">
 
 <div class="container">
+
+<a class="navbar-brand fw-bold text-info fs-4" href="index.html">
+🚀 AstroVerse
+</a>
+
+<div class="ms-auto d-flex gap-3">
+
+<a href="index.html" class="nav-link text-white">Home</a>
+
+<a href="planets.html" class="nav-link text-white">Planets</a>
+
+<a href="missions.html" class="nav-link text-info">Missions</a>
+
+<a href="gallery.html" class="nav-link text-white">Gallery</a>
+
+<a href="contact.html" class="nav-link text-white">Contact</a>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+<section class="missions-hero">
+
+<div class="container">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
+
+<h1 class="display-1 glow fw-bold mb-4">
+Space Missions
+</h1>
+
+<p class="lead text-light">
+Exploring distant worlds, advancing science,
+and shaping humanity’s future in space.
+</p>
+
+<a href="#timeline"
+class="btn btn-info btn-lg mt-4 px-4">
+Explore Missions
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+<section class="py-5">
+
+<div class="container">
+
+<div class="row g-4 text-center">
+
+<div class="col-md-4">
+
+<div class="mission-stat">
+
+<h2>300+</h2>
+
+<p>Space Missions</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="mission-stat">
+
+<h2>80+</h2>
+
+<p>Countries in Space Research</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="mission-stat">
+
+<h2>12</h2>
+
+<p>Humans Walked on Moon</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TIMELINE -->
+<section class="py-5" id="timeline">
+
+<div class="container">
+
+<h2 class="text-center glow mb-5">
+Upcoming Missions
+</h2>
+
 <div class="timeline">
 
+<!-- ARTEMIS -->
 <div class="timeline-item">
-<h5>Artemis II</h5>
-<p>Return humans to the Moon.</p>
+
+<div class="timeline-content">
+
+<span class="badge bg-info text-dark mb-3">
+2026
+</span>
+
+<h4>Artemis II</h4>
+
+<p>
+NASA's Artemis II mission will send astronauts around the Moon,
+preparing for future lunar landings.
+</p>
+
+<ul>
+<li>🚀 Human lunar mission</li>
+<li>🌕 Orion spacecraft</li>
+<li>🛰️ Deep space exploration</li>
+</ul>
+
 </div>
 
+</div>
+
+<!-- EUROPA -->
 <div class="timeline-item">
-<h5>Europa Clipper</h5>
-<p>Study Jupiter’s icy moon.</p>
+
+<div class="timeline-content">
+
+<span class="badge bg-success mb-3">
+2027
+</span>
+
+<h4>Europa Clipper</h4>
+
+<p>
+A mission designed to study Jupiter’s icy moon Europa
+and search for conditions suitable for life.
+</p>
+
+<ul>
+<li>🧊 Ice-covered moon</li>
+<li>🔬 Astrobiology research</li>
+<li>🪐 Jupiter system exploration</li>
+</ul>
+
 </div>
 
+</div>
+
+<!-- MARS -->
 <div class="timeline-item">
-<h5>Mars Sample Return</h5>
-<p>Bring Mars samples to Earth.</p>
+
+<div class="timeline-content">
+
+<span class="badge bg-warning text-dark mb-3">
+2028
+</span>
+
+<h4>Mars Sample Return</h4>
+
+<p>
+Scientists aim to return Martian rock samples to Earth
+for advanced laboratory analysis.
+</p>
+
+<ul>
+<li>🔴 Mars exploration</li>
+<li>🧪 Rock sample studies</li>
+<li>👨‍🚀 Future human missions</li>
+</ul>
+
 </div>
 
 </div>
+
+<!-- DRAGONFLY -->
+<div class="timeline-item">
+
+<div class="timeline-content">
+
+<span class="badge bg-danger mb-3">
+2030
+</span>
+
+<h4>Dragonfly Mission</h4>
+
+<p>
+A robotic drone mission to Saturn’s moon Titan
+to explore its atmosphere and chemistry.
+</p>
+
+<ul>
+<li>🚁 Flying robotic drone</li>
+<li>🪐 Titan exploration</li>
+<li>🌌 Organic chemistry research</li>
+</ul>
+
 </div>
 
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURED IMAGE -->
+<section class="py-5">
+
+<div class="container text-center">
+
+<img src="images/mission-space.jpg"
+class="img-fluid rounded shadow-lg mission-image">
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
 <footer class="bg-black text-white mt-5 pt-5 border-top border-secondary">
 
-  <div class="container">
+<div class="container">
 
-    <div class="row">
+<div class="row">
 
-      <!-- ABOUT -->
-      <div class="col-md-4 mb-4">
-        <h4 class="text-info">AstroVerse</h4>
-        <p class="small text-light">
-          AstroVerse is a futuristic space exploration platform designed to visualize
-          planets, missions, and cosmic data in an immersive UI experience.
-        </p>
-      </div>
+<!-- ABOUT -->
+<div class="col-md-4 mb-4">
 
-      <!-- QUICK LINKS -->
-      <div class="col-md-4 mb-4">
-        <h5 class="text-info">Quick Navigation</h5>
+<h4 class="text-info">
+AstroVerse
+</h4>
 
-        <a href="index.html" class="footer-link d-block">Home</a>
-        <a href="planets.html" class="footer-link d-block">Planets</a>
-        <a href="missions.html" class="footer-link d-block">Missions</a>
-        <a href="gallery.html" class="footer-link d-block">Gallery</a>
-        <a href="contact.html" class="footer-link d-block">Contact</a>
+<p class="small">
+Tracking humanity’s journey beyond Earth through science,
+technology, and space exploration.
+</p>
 
-      </div>
+</div>
 
-      <!-- CONTACT -->
-      <div class="col-md-4 mb-4">
-        <h5 class="text-info">Contact</h5>
+<!-- LINKS -->
+<div class="col-md-4 mb-4">
 
-        <p class="small">📧 astroverse@space.com</p>
-        <p class="small">📞 +92 300 1234567</p>
-        <p class="small">🌍 Exploring the universe digitally</p>
+<h5 class="text-info">
+Quick Links
+</h5>
 
-      </div>
+<a href="index.html" class="footer-link d-block">Home</a>
 
-    </div>
+<a href="planets.html" class="footer-link d-block">Planets</a>
 
-    <hr class="border-secondary">
+<a href="gallery.html" class="footer-link d-block">Gallery</a>
 
-    <!-- NEWSLETTER -->
-    <div class="row text-center">
+<a href="contact.html" class="footer-link d-block">Contact</a>
 
-      <div class="col-md-12">
-        <h5 class="text-info">Subscribe to Cosmic Updates</h5>
+</div>
 
-        <input type="email" class="form-control w-50 mx-auto my-3" placeholder="Enter your email">
+<!-- NEWSLETTER -->
+<div class="col-md-4 mb-4">
 
-        <button class="btn btn-info px-4">Subscribe</button>
-      </div>
+<h5 class="text-info">
+Newsletter
+</h5>
 
-    </div>
+<input type="email"
+class="form-control my-3"
+placeholder="Enter Email">
 
-    <hr class="border-secondary">
+<button class="btn btn-info">
+Subscribe
+</button>
 
-    <!-- COPYRIGHT -->
-    <div class="text-center small py-2">
-      © 2026 AstroVerse | Designed for Web Development Lab Project
-    </div>
+</div>
 
-  </div>
+</div>
+
+<hr class="border-secondary">
+
+<p class="text-center small">
+© 2026 AstroVerse | Mission Control Center
+</p>
+
+</div>
 
 </footer>
 

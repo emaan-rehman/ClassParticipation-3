@@ -1,27 +1,49 @@
+/* =========================================
+   GOOGLE FONT STYLING
+   ========================================= */
 
+body {
+    font-family: 'Cabin', sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    color: white;
+
+    overflow-x: hidden;
+
+    background:
+    linear-gradient(
+    rgba(2,6,23,0.88),
+    rgba(2,6,23,0.92)
+    ),
+    url('images/mission-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 /* HEADINGS */
 h1, h2, h3, h4, h5 {
     font-family: 'Abril Fatface', serif;
 }
-/* SAME STARRY BACKGROUND FOR ALL PAGES */
 
-body {
-
-    background:
-    linear-gradient(rgba(3, 8, 31, 0.85), rgba(2,6,23,0.95)),
-    url('images/mission-bg.jpg') center/cover fixed no-repeat;
-
-    color: white;
-
-    font-family: 'Cabin', sans-serif;
-
-    overflow-x: hidden;
-}
 /* =========================================
-   STATIC SPACE BACKGROUND
+   REMOVE WHITE BACKGROUNDS
    ========================================= */
 
+section,
+.container,
+.container-fluid,
+.row {
+    background: transparent !important;
+}
+
+/* =========================================
+   STATIC STARRY BACKGROUND
+   ========================================= */
 
 .stars,
 .stars2,
@@ -41,7 +63,7 @@ body {
 }
 
 /* SMALL STARS */
- .stars {
+.stars {
 
     background-image:
     radial-gradient(white 1px, transparent 1px),
@@ -62,7 +84,7 @@ body {
 }
 
 /* MEDIUM STARS */
- .stars2 {
+.stars2 {
 
     background-image:
     radial-gradient(rgba(255,255,255,0.7) 1px, transparent 1px);
@@ -72,8 +94,8 @@ body {
     opacity: 0.4;
 }
 
-/* LARGE GLOWING STARS */
- .stars3 {
+/* LARGE STARS */
+.stars3 {
 
     background-image:
     radial-gradient(rgba(20,241,255,0.9) 2px, transparent 2px);
@@ -81,27 +103,40 @@ body {
     background-size: 500px 500px;
 
     opacity: 0.3;
-} 
+}
+
 /* =========================================
    NAVBAR
    ========================================= */
 
 .navbar {
-    background: #000 !important;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    background: rgba(0,0,0,0.75) !important;
+
+    backdrop-filter: blur(10px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
 }
 
 .navbar-brand {
+
     letter-spacing: 1px;
+
+    font-weight: bold;
 }
 
 .nav-link {
+
     color: white !important;
+
     transition: 0.3s;
+
     font-weight: 500;
 }
 
 .nav-link:hover {
+
     color: #14f1ff !important;
 }
 
@@ -124,20 +159,16 @@ body {
     background:
     linear-gradient(
     rgba(2,6,23,0.45),
-    rgba(2,6,23,0.75)
-    ),
-    url('images/hero\ image.avif');
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    rgba(2,6,23,0.65)
+    );
 }
 
-/* HERO TITLE */
 .hero-title {
 
-    font-size: 4rem;
- font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     font-weight: bold;
 
     color: white;
@@ -149,7 +180,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* HERO TEXT */
 .hero-text {
 
     font-size: 1.4rem;
@@ -188,28 +218,10 @@ body {
     0 0 20px rgba(20,241,255,0.6);
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+/* =========================================
+   MISSIONS HERO
+   ========================================= */
 
-    .hero-title {
-        font-size: 3.5rem;
-    }
-
-    .hero-text {
-        font-size: 1.1rem;
-    }
-}
-
-.hero h1 {
-    font-size: 5rem;
-}
-
-.hero p {
-    max-width: 700px;
-    margin: auto;
-}
-
-/* MISSIONS HERO */
 .missions-hero {
 
     min-height: 70vh;
@@ -223,13 +235,10 @@ body {
     padding: 100px 20px;
 
     background:
-    linear-gradient(rgba(2,6,23,0.75), rgba(2,6,23,0.95)),
-    url('images/mission-bg.jpg') center/cover no-repeat;
-}
-
-.missions-hero p {
-    max-width: 700px;
-    margin: auto;
+    linear-gradient(
+    rgba(2,6,23,0.45),
+    rgba(2,6,23,0.65)
+    );
 }
 
 /* =========================================
@@ -237,6 +246,7 @@ body {
    ========================================= */
 
 .glow {
+
     color: #14f1ff;
 
     text-shadow:
@@ -250,14 +260,37 @@ body {
    ========================================= */
 
 .btn-info {
+
     background: #14f1ff;
+
     border: none;
+
     color: black;
+
     font-weight: 600;
 }
 
 .btn-info:hover {
+
     background: #0fd5e0;
+}
+
+/* =========================================
+   GLASS EFFECT
+   ========================================= */
+
+.card,
+.timeline-content,
+.stat-box,
+.mission-stat {
+
+    background:
+    rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(10px);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
 }
 
 /* =========================================
@@ -265,12 +298,6 @@ body {
    ========================================= */
 
 .card {
-
-    background: rgba(255,255,255,0.05);
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    backdrop-filter: blur(10px);
 
     color: white;
 
@@ -299,22 +326,28 @@ body {
 }
 
 .card-body {
+
     padding: 20px;
 }
 
 .card h4,
 .card h5 {
+
     color: #14f1ff;
 }
 
 .card ul {
+
     padding-left: 18px;
+
     text-align: left;
 }
 
 .card li {
+
     margin-bottom: 8px;
-    color: rgb(77, 121, 104);
+
+    color: #d1d5db;
 }
 
 /* =========================================
@@ -323,8 +356,6 @@ body {
 
 .stat-box,
 .mission-stat {
-
-    background: rgba(255,255,255,0.05);
 
     padding: 40px 20px;
 
@@ -354,6 +385,7 @@ body {
 
 .stat-box p,
 .mission-stat p {
+
     color: #d1d5db;
 }
 
@@ -371,13 +403,13 @@ body {
 }
 
 .timeline-item {
+
     margin-bottom: 40px;
+
     color: white;
 }
 
 .timeline-content {
-
-    background: rgba(255,255,255,0.05);
 
     padding: 25px;
 
@@ -395,10 +427,9 @@ body {
 }
 
 .timeline-content li {
+
     margin-bottom: 8px;
 }
-
-
 
 /* =========================================
    MASONRY GALLERY
@@ -411,7 +442,6 @@ body {
     column-gap: 20px;
 }
 
-/* IMAGES */
 .gallery-img {
 
     width: 100%;
@@ -443,21 +473,6 @@ body {
     0 0 25px rgba(20,241,255,0.5);
 }
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
-
-    .masonry-gallery {
-        column-count: 2;
-    }
-}
-
-@media (max-width: 576px) {
-
-    .masonry-gallery {
-        column-count: 1;
-    }
-}
-
 /* =========================================
    FEATURED IMAGE
    ========================================= */
@@ -468,7 +483,8 @@ body {
 
     border-radius: 20px;
 
-    border: 2px solid rgba(255,255,255,0.1);
+    border:
+    2px solid rgba(255,255,255,0.1);
 }
 
 /* =========================================
@@ -477,9 +493,11 @@ body {
 
 .form-control {
 
-    background: #111;
+    background:
+    rgba(255,255,255,0.05);
 
-    border: 1px solid rgba(255,255,255,0.2);
+    border:
+    1px solid rgba(255,255,255,0.15);
 
     color: white;
 
@@ -488,7 +506,8 @@ body {
 
 .form-control:focus {
 
-    background: #111;
+    background:
+    rgba(255,255,255,0.08);
 
     color: white;
 
@@ -499,6 +518,7 @@ body {
 }
 
 .form-control::placeholder {
+
     color: #aaa;
 }
 
@@ -507,7 +527,14 @@ body {
    ========================================= */
 
 footer {
-    background: #000;
+
+    background:
+    rgba(0,0,0,0.7);
+
+    backdrop-filter: blur(10px);
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
 }
 
 .footer-link {
@@ -517,9 +544,12 @@ footer {
     text-decoration: none;
 
     margin-bottom: 8px;
+
+    display: block;
 }
 
 .footer-link:hover {
+
     color: #14f1ff;
 }
 
@@ -529,43 +559,61 @@ footer {
 
 @media (max-width: 992px) {
 
-    .hero h1,
+    .hero-title,
     .missions-hero h1 {
+
         font-size: 4rem;
+    }
+
+    .masonry-gallery {
+
+        column-count: 2;
     }
 }
 
 @media (max-width: 768px) {
 
-    .hero h1,
+    .hero-title,
     .missions-hero h1 {
+
         font-size: 3rem;
     }
 
     .hero,
     .missions-hero {
+
         padding: 80px 20px;
     }
 
     .card img {
+
         height: 200px;
     }
 
     .stat-box h2,
     .mission-stat h2 {
+
         font-size: 40px;
     }
 }
 
 @media (max-width: 576px) {
 
-    .hero h1,
+    .hero-title,
     .missions-hero h1 {
+
         font-size: 2.5rem;
     }
 
     .timeline {
+
         margin-left: 0;
+
         padding-left: 20px;
+    }
+
+    .masonry-gallery {
+
+        column-count: 1;
     }
 }
